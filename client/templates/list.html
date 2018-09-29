@@ -1,0 +1,13 @@
+<div ng-init="getStudents()">
+    <p>Students List</p>
+    <div ng-repeat="students in students">
+        <h1>{{students.name}}</h1>
+        <h1>{{students.dept}}</h1>
+        <h1>{{students.contact}}</h1>
+        <h1>{{students.salary}}</h1>
+        <a href="#/students/{{students._id}}/show"> Show </a>
+        <a href="#/students/{{students._id}}/edit"> edit </a>
+        <a ng-click="deleteStudents(students._id)">delete</a>
+        <hr>
+    </div>
+</div>

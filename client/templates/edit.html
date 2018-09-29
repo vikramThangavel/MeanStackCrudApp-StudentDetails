@@ -1,0 +1,11 @@
+<div ng-init="showStudents()">
+    <p>new Student</p>
+    <form ng-submit="updateStudent()">
+          <input type="text" id="name" ng-model="students.name" value="students.name"><br>
+          <input type="text" id="dept" ng-model="students.dept" value="students.dept"><br>
+          <input type="text" id="contact" ng-model="students.contact" value="students.contact"><br>
+          <input type="text" id="salary" ng-model="students.salary" value="students.salary"><br>
+          <button type="submit">update</button>
+          <a href="#/students" class="btn btn-default"> Cancel</a>
+    </form>
+</div>
